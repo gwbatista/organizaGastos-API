@@ -1,0 +1,14 @@
+{
+  "name": "Organiza Gastos",
+  "description": "Sistema para gestão de gastos pessoais",
+  "version": "1.0.0",
+  
+  "database": {
+      "drive": "postgres",
+      "username": "postgres",
+      "password": "UDBzdGdyZXMxIQ==",
+      "hostname": "127.0.0.1",
+      "port": "5432",
+      "dbname": "organiza_gastos"
+  }
+}
