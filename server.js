@@ -8,6 +8,7 @@ const pessoalChartsRoutes = require('./routes/pessoalChartsRoutes');
 const empresaChartsRoutes = require('./routes/empresaChartsRoutes');
 const totalCharts = require('./routes/totalCharts');
 const relatorioPdfRoutes = require('./routes/relatorioPdfRoutes');
+const metasRoutes = require('./routes/metasRoutes');
 const knex = require('./config/knex');
 
 const app = express();
@@ -22,6 +23,7 @@ app.use('/cgastos', gastosChartsRoutes);
 app.use('/cpessoal', pessoalChartsRoutes);
 app.use('/cempresa', empresaChartsRoutes);  
 app.use('/relatorio', relatorioPdfRoutes);  
+app.use('/metas', metasRoutes); 
 
 knex.raw('select 1+1 as result')
   .then(() => {
